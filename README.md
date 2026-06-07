@@ -105,4 +105,10 @@ macOS is cautious about apps it has not met. if the first launch gets a stern
 look, open `HeySKi.app` from your Applications folder once (right‑click → Open),
 say yes, and you will never think about it again.
 
+if macOS still blocks it after unzip, clear quarantine manually:
+
+```bash
+xattr -d com.apple.quarantine /Applications/HeySKi.app
+```
+
 requires macOS 11 (Big Sur) or later.
